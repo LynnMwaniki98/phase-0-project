@@ -1,11 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
   <head> 
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="style.css" />
    <title>My Website</title>
   </head>
   <body>
-   <h1>Hello World!</h1>
+    <!--navbar section-->
+    <nav class="navbar">
+      <div class="navbar__container">
+      <a href="#home" id="navbar__logo">MWANIKI</a>
+      <div class="navbar__toggle" id="mobile-menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span> 
+    </div>
+      <ul class="navbar__menu">
+      <li class="navbar__item">
+       <a href="#home" class="navbar__links" id="home-page">Home</a>
+      </li>
+      <li class="navbar__item">
+        <a href="#about" class="navbar__links" id="about-page">About</a>
+       </li>
+       <li class="navbar__item">
+        <a href="#skills" class="navbar__links" id="skills-page">Skills</a>
+       </li>
+       <li class="navbar__item">
+        <a href="#contact" class="navbar__links" id="contact-page">Contact</a>
+       </li>
+       <li class="navbar__btn">
+        <a href="#sign-up" class="button" id="signup">Sign Up</a>
+       </li>
+    </ul>
+   </div>
+   </nav>
+   
+       <!--Home section-->
+       <div class="home" id="home">
+        <div class="home__container">
+          <img src="images/img 2/Screenshot from 2022-08-11 10-52-28.png" alt="" width = "300" height = "200">
+          <h1 class="home__heading">Hi,<br>I'm Lynn Mwaniki</h1>
+          <p class="home__description">A Web Developer</p>
+          <button class="home__btn"><a href="https://www.linkedin.com/in/lynn-mwaniki-7a4529188/">Linkedin</a></button>
+        </div>
+       </div>
+
+       <!--About section-->
+       <div class="about section" id="about">
+        <h2 class="about__title">About</h2>
+        <div class="about__container">
+          <div class="about__img--container">
+            <img src="images/img 1/Screenshot from 2022-08-11 10-20-50.png" alt="" width = "300" height = "200">
+          </div>
+          <div class="about__content">
+            <h1>Who am I?</h1>
+            <p>I am a Web Developer who is responsible for the design and construction of websites. I ensure that sites meet user expectations by ensuring they look good, run smoothly and offer easy access points with no loading issues between pages or error messages.</p>
+          </div>
+        </div>
+       </div>
+
+        <!--Skills section-->
+        <div class="skills" id="skills">
+         <div class="skills__container">
+          <div>
+            <h2 class="skills__subtitle">Profesional Skills</h2>
+            <p class="skills__text">Below are some of the languages I use and my level of skill.</p>
+            <div class="skills__content">
+              <div class="skills__names">
+                <i class='bx bxl-html5 skills__icon'></i>
+                <span class="skills__name">HTML5/CSS3</span>
+            </div>
+            <div class="skills__bar skills__html">
+            </div>
+            </div>
+            <div>
+                <span class="skills__percentage">50%</span>
+            </div>
+            </div>
+            
+            <div class="skills__content">
+              <div class="skills__names">
+                <i class='bx bxl-javascript skills__icon' ></i>
+                <span class="skills__name">JAVASCRIPT</span>
+              </div>
+              <div class="skills__bar skills__js"></div>             
+              </div>
+              <div>
+                <span class="skills__percentage">50%</span>
+         </div> 
+
+        </div>
+        </div>
+        <div>
+          <img src="images/img 3/Screenshot from 2022-08-11 11-11-37.png" alt="" width = "300" height = "200">
+        </div>
+        </div>
+
+         <!--contact section-->
+         <div class="contact" id="contact">
+          <h2 class="contact-title">Contact</h2>
+          <div class="contact__container">
+          <p>Email address: @mwanikilynn8@gmail.com</p>
+          <p>Phone number: +254725448455</p>
+        </div>
+      </div>
+
+        <!--footer section-->
+        <div class="footer">
+          <p class="footer__title">Lynn Mwaniki</p>
+          <p>&#169; 2022 copyright all right reserved</p>
+        </div>
+
+
    <script src="script.js"></script>
   </body>
 </html>

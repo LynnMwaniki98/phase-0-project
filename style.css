@@ -1,3 +1,257 @@
-body {
-  background-color: pink;
+ *{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+ }
+ .navbar{
+  background: black;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+ }
+
+ .navbar__container{
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  z-index: 1;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 50px;
+ }
+ 
+ #navbar__logo{
+  background-color: #ae3fbd;
+
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem; 
+ }
+
+ .navbar__menu{
+  display: flex;
+  align-items: center;
+  list-style: none;
+ }
+
+ .navbar__item{
+  height: 80px;
+ }
+
+ .navbar__links{
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 125px;
+  text-decoration: none;
+  height: 100%;
+  transition: all 0.3s ease;
+
+ }
+ .navbar__btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  width: 100%;
+ }
+
+ .home__btn{
+  display: inline-block;
+  background-color: plum;
+  color: #fff;
+  padding: .75rem 2.5rem;
+  font-weight: var(--font-semi);
+  border-radius: .5rem;
+ }
+ .home__btn:hover{
+  box-shadow: 0 10px 36px rgba(0,0,0,.15);
+ }
+
+ .navbar__links:hover{
+  color: blueviolet;
+  transition: all 0.3s ease;
+ }
+
+ .button{
+  display: inline-block;
+  background-color: plum;
+  color: #fff;
+  padding: .75rem 2.5rem;
+  font-weight: var(--font-semi);
+  border-radius: .5rem;
+ }
+
+ /*home section*/
+ .home{
+  background: white;
+  padding: 70px;
+ }
+
+ .home__container{
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1300px;
+  padding: 0 50px;
+  margin: 0 auto;
+  height: 90%;
+  text-align: center;
+  padding: 30px;
+ }
+
+.home__heading{
+  font-size: 50px;
+  margin-bottom: 24px;
+} 
+
+
+.home__description{
+  font-size: 60px;
+}
+ 
+
+/*about section*/
+.about{
+  background-color: rgb(153, 23, 131);
+  padding: 5rem ;
+  text-align: center;
+  font-weight: var(--font-semi);
+}
+
+.about__subtitle{
+  font-size: 3rem;
+  text-align: center;
+}
+
+.about__container{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  height: 90%;
+  z-index: 1;
+  width: 100%;
+  max-width: 1300px;
+  padding: 0 50px;
+}
+
+.about__content{
+  color: white;
+  width: 100%;
+}
+
+.about__content h1{
+  font-size: 2rem;
+  font-family: sans-serif;
+}
+
+.about__content p{
+  font-size:medium
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ 
+}
+
+.about__img img{
+  width: 200px;
+  height: auto;
+  text-align: center;
+  padding: 20px;
+}
+
+/*skills section*/
+.skills__container{
+  row-gap: 2rem;
+  text-align: center;
+}
+
+.skills__subtitle{
+  margin-bottom: var(--mb-2);
+}
+.skills__text{
+  margin-bottom: var(--mb-4);
+}
+
+.skills__content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  font-weight: var(--font-semi);
+  padding: .5rem 1rem;
+  margin-bottom: var(--mb-4);
+  border-radius: .5rem;
+  box-shadow: 0 4px 25px rgba(14,36,49,.15);
+}
+
+.skills__icon{
+  font-size: 2rem;
+  margin-right: var(--mb-2);
+  color: var(--first-color);
+}
+.skills__names{
+  display: flex;
+  align-items: center;
+}
+.skills__bar{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: var(--first-color);
+  height: .25rem;
+  border-radius: .5rem;
+  z-index: var(--z-back);
+}
+
+.skills__html{
+  width: 50%;
+}
+.skills__css{
+  width: 50%;
+}
+.skills__js{
+  width: 50%;
+}
+
+.skills__img{
+  border-radius: .5rem;
+}
+
+.contact{
+  background-color: rgb(153, 23, 131);
+  padding: 2rem ; 
+}
+.contact__conainer{
+  text-align: center;
+}
+
+.footer{
+  background-color: rgb(19, 17, 17);
+  padding: 2rem;
+  text-align: center;
+  font-weight: var(--font-semi);
+  padding: 2rem 0;
+}
+
+.footer__title{
+  font-size: 2rem;
+  margin-bottom: var(--mb-4);
+  font-style: italic;
+  color: #fff;
+}
+p{
+  color: white;
 }
